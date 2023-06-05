@@ -47,14 +47,15 @@ body {
   text-decoration: none;
   color: white;
   font-size: 1.2rem;
+  overflow: hidden; 
   
 }
-.navbar .links a:hover {
+.navbar .links a:hover{
   color: orange;
   display: block;
-  animation: pulse; /* referring directly to the animation's @keyframe declaration */
+  animation: pulse; 
   animation-duration: 2s;
-  overflow: hidden; /* don't forget to set a duration! */
+  
 }
 
 
