@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,600;0,900;1,200;1,600&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+
+.container {
+  display: grid;
+  grid-template-rows: 100% 1fr 20%;
+  grid-template-columns: 25% 1fr;
+  grid-template-areas: "header header" "siderbar content" "footer footer";
+  height: 100vh;
+}
+
+.header{
+  grid-area: header;
+  background: #000046;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, hsla(193, 78%, 49%, 0.603), hsla(240, 100%, 14%, 0.603)), url(./assets/img/Fondo-jujuy.png);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, hsla(193, 78%, 49%, 0.603), hsla(240, 100%, 14%, 0.603)), url(./assets/img/Fondo-jujuy.png); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+
+}
+
+.navbar-container{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: end;
+}
+
+
+.navbar .links{
+  display: flex;
+  justify-content: end;
+  flex-flow: nowrap;
+  align-items: center;
+  list-style: none;
+  color: white;
+}
+.navbar .links a {
+  padding: 3px 15px;
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  
+}
+.navbar .links a:hover {
+  color: orange;
+  display: block;
+  animation: pulse; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s;
+  overflow: hidden; /* don't forget to set a duration! */
+}
+
+
+
+.container_info{
+  display: grid;
+  place-content: center;
+}
+
+.container_info h1{
+  font-size:5rem;
+  text-align: center;
+  color: #fff;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.container_info p{
+  font-size:2rem;
+  color: #fff;
+  text-align: center;
+  margin-top: 0;
+}
+
+.container_info a{
+  font-size:2rem;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid white;
+  border-radius:25px;
+}
+
+.container_info a:hover{
+  font-size:2rem;
+  text-align: center;
+  text-decoration: none;
+  color: orange;
+  border: 1px solid orange;
+  border-radius:25px;
+}
+
+.header img {
+  position: absolute;
+  bottom: 0;
+}
+
+
+.content {
+
+  grid-area: content;
+
+}
+
+.footer {
+
+  grid-area: footer;
+}
+.toggle_btn{
+  color:#fff;
+  font-size: 2rem;
+  background: transparent;
+  display: none;
+  border: none;
+  margin: 0 25px;
+  cursor: pointer;
+}
+
+@media screen and ( max-width: 768px ){
+  .navbar-container .navbar {
+    width: 100%;
+    display: none;
+  }
+
+  .navbar-container .navbar.active {
+    display: block;
+  }
+
+  .navbar-container .navbar.active ul{
+    background:rgba(255, 255, 255, 0.1);
+    margin: 0 auto;
+  }
+
+  .navbar-container .navbar.active ul li{
+    padding: 10px;
+  }
+
+  .navbar .links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    color: white;
+    padding: 0;
+  }
+
+  .navbar-container .toggle_btn{
+    display: block;
+  }
+
+}
