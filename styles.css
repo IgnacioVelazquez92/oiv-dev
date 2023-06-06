@@ -6,36 +6,19 @@ body {
   font-family: 'Titillium Web', sans-serif;
 }
 
-
-.container {
-  display: grid;
-  grid-template-rows: 100vh 1fr 20%;
-  grid-template-columns: 25% 1fr;
-  grid-template-areas: "header header" "siderbar content" "footer footer";
-  min-height: 100vh;
-}
-
 .header{
-  grid-area: header;
+  min-height: 100vh;
   background: #000046;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, hsla(193, 78%, 49%, 0.603), hsla(240, 100%, 14%, 0.603)), url(./assets/img/Fondo-jujuy.png);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, hsla(193, 78%, 49%, 0.603), hsla(240, 100%, 14%, 0.603)), url(./assets/img/Fondo-jujuy.png); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background-size: cover;
+  background: -webkit-linear-gradient(to right, hsla(193, 78%, 49%, 0.603), hsla(240, 100%, 14%, 0.603)), url(./assets/img/Fondo-jujuy.png);  /* Chrome 10-25, Safari 5.1-6 */
+  background-size:cover;
+  background-repeat: none;
   background-position: center;
   background-blend-mode: multiply;
 
 }
 
-.content {
 
-  grid-area: content;
-
-}
-
-.footer {
-
-  grid-area: footer;
-}
 
 
 /* Estilos del navbar */
