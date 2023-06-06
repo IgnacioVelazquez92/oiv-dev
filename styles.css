@@ -8,10 +8,8 @@ body {
 
 .header{
   min-height: 100vh;
-  background: #000046;  /* fallback for old browsers */
   background: linear-gradient(to right, hsla(193, 78%, 49%, 0.603), hsla(240, 100%, 14%, 0.603)), url(./assets/img/Fondo-jujuy.png); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background: -webkit-linear-gradient(to right, hsla(193, 78%, 49%, 0.603), hsla(240, 100%, 14%, 0.603)), url(./assets/img/Fondo-jujuy.png);  /* Chrome 10-25, Safari 5.1-6 */
-  background-size:cover;
+  background-size:contain;
   background-repeat: none;
   background-position: center;
   background-blend-mode: multiply;
