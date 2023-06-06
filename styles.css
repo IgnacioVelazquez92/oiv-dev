@@ -9,11 +9,11 @@ body {
 .header{
   min-height: 100vh;
   background: linear-gradient(to right, hsla(193, 78%, 49%, 0.603), hsla(240, 100%, 14%, 0.603)), url(./assets/img/Fondo-jujuy.png); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background-size:contain;
+  background-size:cover;
   background-repeat: none;
   background-position: center;
   background-blend-mode: multiply;
-
+  overflow: cover;
 }
 
 
@@ -71,7 +71,7 @@ body {
 }
 
 .container_info h1{
-  font-size:5rem;
+  font-size:5em;
   font-weight: 700;
   text-align: center;
   color: #fff;
@@ -80,7 +80,7 @@ body {
 }
 
 .container_info h4{
-  font-size:2rem;
+  font-size:2.5em;
   color: #fff;
   text-align: center;
   margin-top: 0;
@@ -89,7 +89,7 @@ body {
 
 
 .container_info h5{
-  font-size:2rem;
+  font-size:2.5em;
   font-weight: 200;
   text-align: center;
   text-decoration: none;
@@ -100,6 +100,16 @@ body {
 .header img {
   position: absolute;
   bottom: 0;
+}
+
+.about-me{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.about-me article {
+  font-size: 1rem;
 }
 
 
@@ -137,5 +147,18 @@ body {
   .navbar-container .toggle_btn{
     display: block;
   }
+
+  .about-me{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  .about-me article {
+    font-size: 1rem;
+  }
+  
 
 }
