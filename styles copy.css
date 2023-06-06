@@ -11,9 +11,9 @@ body {
   background-repeat: none;
   background-position: center;
   background-blend-mode: multiply;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
 }
+
+
 
 
 /* Estilos del navbar */
@@ -24,6 +24,7 @@ body {
   align-items: center;
   justify-content: end;
 }
+
 
 .navbar .links{
   display: flex;
@@ -43,8 +44,8 @@ body {
   font-size: 1.2rem;
   overflow: hidden; 
 }
-
 .navbar .links a:hover{
+  text-align: center;
   color: orange;
 }
 
@@ -60,17 +61,14 @@ body {
   cursor: pointer;
 }
 
-
 /* Estilos de Ignacio Velazquez */
 .container_info{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
+  display: grid;
+  place-content: center;
 }
 
 .container_info h1{
-  font-size:4em;
+  font-size:5em;
   font-weight: 700;
   text-align: center;
   color: #fff;
@@ -86,15 +84,62 @@ body {
   font-weight: 100;
 }
 
+
 .container_info h5{
   font-size:2.5em;
   font-weight: 200;
   text-align: center;
-  text-decoration: none;
   color: orange;
 }
 
 
+.header img {
+  position: absolute;
+  bottom: 0;
+}
+
+/* Estilos sobre mi */
+
+.about-me{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.about-me article {
+  font-size: 2em;
+  
+}
+
+/* galeria de imagenes */
+
+.figure-container{
+  width: 500px;
+  margin: 150px auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.figure-container .figure-img{
+  width: 100%;
+  height: auto;
+  transition: all .5s;
+}
+.figure-container:hover .figure-img{
+  transform: scale(1.09);
+  
+}
+
+.figure-container .figure-content{
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: -100%;
+  left: 0;
+  text-align: justify;
+  box-sizing: border-box;
+}
+
+/* Para dispositivos moviles media queries */
 
 @media screen and ( max-width: 768px ){
   .navbar-container .navbar {
