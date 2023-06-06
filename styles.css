@@ -26,6 +26,20 @@ body {
 
 }
 
+.content {
+
+  grid-area: content;
+
+}
+
+.footer {
+
+  grid-area: footer;
+}
+
+
+/* Estilos del navbar */
+
 .navbar-container{
   display: flex;
   flex-flow: row wrap;
@@ -42,24 +56,35 @@ body {
   list-style: none;
   color: white;
 }
+
 .navbar .links a {
+  min-width: 85px;
+  min-height: 35px;
   padding: 3px 15px;
   text-decoration: none;
   color: white;
   font-size: 1.2rem;
   overflow: hidden; 
-  
 }
 .navbar .links a:hover{
+  text-align: center;
   color: orange;
-  display: block;
-  animation: pulse; 
-  animation-duration: 2s;
-  
+
 }
 
+/* estilos del boton hamburguesa */
 
+.toggle_btn{
+  color:#fff;
+  font-size: 2rem;
+  background: transparent;
+  display: none;
+  border: none;
+  margin: 0 25px;
+  cursor: pointer;
+}
 
+/* Estilos de Ignacio Velazquez */
 .container_info{
   display: grid;
   place-content: center;
@@ -73,30 +98,25 @@ body {
   margin-bottom: 0;
 }
 
-.container_info p{
+.container_info h4{
   font-size:2rem;
   color: #fff;
   text-align: center;
   margin-top: 0;
+  font-weight: 100;
 }
 
-.container_info a{
-  font-size:2rem;
-  text-align: center;
-  text-decoration: none;
-  color: #fff;
-  border: 1px solid white;
-  border-radius:25px;
-}
 
-.container_info a:hover{
+
+
+.container_info h5{
   font-size:2rem;
+  font-weight: 200;
   text-align: center;
   text-decoration: none;
   color: orange;
-  border: 1px solid orange;
-  border-radius:25px;
 }
+
 
 .header img {
   position: absolute;
@@ -104,25 +124,7 @@ body {
 }
 
 
-.content {
-
-  grid-area: content;
-
-}
-
-.footer {
-
-  grid-area: footer;
-}
-.toggle_btn{
-  color:#fff;
-  font-size: 2rem;
-  background: transparent;
-  display: none;
-  border: none;
-  margin: 0 25px;
-  cursor: pointer;
-}
+/* Para dispositivos moviles media queries */
 
 @media screen and ( max-width: 768px ){
   .navbar-container .navbar {
