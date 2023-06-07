@@ -96,6 +96,19 @@ body {
   color: orange;
 }
 
+/* Estilos sobre mi */
+
+.about-me{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.about-me article {
+  font-size: 2em;
+  line-height: 1.4em;
+  text-align: center;
+}
 
 
 @media screen and ( max-width: 768px ){
@@ -132,15 +145,15 @@ body {
   }
 
   .about-me{
-    padding: 10px;
+    padding: 30px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
   }
   
-  .about-me article {
-    font-size: 2em;
+  .about-me img{
+    padding: 50px;
   }
   
 
