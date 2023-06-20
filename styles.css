@@ -5,8 +5,9 @@ body {
 }
 
 .header{
+  font-family: 'Titillium Web', sans-serif;
   height: 100vh;
-  background: linear-gradient(to right, hsla(193, 78%, 49%, 0.603), hsla(240, 100%, 14%, 0.603)), url(./assets/img/Fondo-jujuy.png); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, hsla(193, 78%, 49%, 0.603), hsla(240, 100%, 14%, 0.603)), url(./assets/img/Fondo-jujuy.webp); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size:cover;
   background-repeat: none;
   background-position: center;
@@ -93,12 +94,13 @@ body {
   font-weight: 200;
   text-align: center;
   text-decoration: none;
-  color: orange;
+  color: #ffa500;
 }
 
 /* Estilos sobre mi */
 
 .about-me{
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
