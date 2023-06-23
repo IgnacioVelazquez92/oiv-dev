@@ -20,3 +20,32 @@ const typed = new Typed(".typed", {
   cursorChar: "|", // Caracter para el cursor
   contentType: "html", // 'html' o 'null' para texto sin formato
 });
+
+let Proyectos = {
+  cinefilos: {
+    imgUrl: "./img/cinefilos.png",
+    url: "https://cinefilos-rolling-24i.netlify.app/index.html",
+    gitHub: "https://github.com/IgnacioVelazquez92/cinefilos-24i.git",
+    title: "Cinefilos",
+    description:
+      "En este proyecto aplique conocimientos HTML CSS y BOOTSTRAP para maquetar un sitio estático.",
+  },
+
+  polaris3d: {
+    imgUrl: "./img/polaris3d.png",
+    url: "https://polaris-3d.netlify.app/pages/login.html",
+    gitHub: "https://github.com/IgnacioVelazquez92/Polaris.git",
+    title: "Polaris 3D",
+    description:
+      "En este proyecto aplique conocimientos JavaScript para crear y loguear usuarios que se guardan en Local Storage",
+  },
+
+  amCreaciones: {
+    imgUrl: "./img/am-creaciones.png",
+    url: "https://am-creaciones.netlify.app/",
+    gitHub: "https://github.com/IgnacioVelazquez92/AM-FRONT-PF.git",
+    title: "AM-Creaciones",
+    description:
+      "Ecommerce creado con el stack MERN, Donde se puede realizar un CRUD completo tanto de usuarios como de productos.",
+  },
+};
